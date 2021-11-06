@@ -1,7 +1,7 @@
 Particle [] particles;
 void setup()
 {
-	size(300,250);
+	size(200,200);
 	particles = new Particle[5000];
 	for(int i = 0; i < particles.length; i++)
 	{
@@ -14,7 +14,8 @@ void setup()
 
 void draw()
 {
-	background(224,255,255);
+	fill(224,255,255,30);
+	rect(0,0,300,300);
 	for(int i = 0; i < particles.length; i++)
 	{
 		particles[i].show();
@@ -34,8 +35,8 @@ class NormalParticle implements Particle
 	int dSpeed;
 	NormalParticle()
 	{
-		normalX = 150;
-		normalY = 125;
+		normalX = 100;
+		normalY = 100;
 		dSpeed = (int)(Math.random()*3)+1;
 		dAngle = Math.PI*2*Math.random();
 	}
