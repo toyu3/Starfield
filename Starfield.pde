@@ -59,8 +59,8 @@ class OddballParticle implements Particle
 	double oddX, oddY;
 	OddballParticle()
 	{
-		oddX = (Math.random()*100)+75;
-		oddY = (Math.random()*100)+75;
+		oddX = (Math.random()*50)+75;
+		oddY = (Math.random()*50)+75;
 	}
 	public void move()
 	{
