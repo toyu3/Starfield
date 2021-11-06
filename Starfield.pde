@@ -14,7 +14,7 @@ void setup()
 
 void draw()
 {
-	fill(224,255,255,30);
+	fill(255,255,255,30);
 	rect(0,0,300,300);
 	for(int i = 0; i < particles.length; i++)
 	{
