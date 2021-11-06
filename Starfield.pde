@@ -2,14 +2,14 @@ Particle [] particles;
 void setup()
 {
 	size(300,250);
-	particles = new Particle[200];
+	particles = new Particle[5000];
 	for(int i = 0; i < particles.length; i++)
 	{
 		particles[i] = new NormalParticle();
 	}
 	particles[0] = new OddballParticle();
 	particles[1] = new HugeParticle();
-	frameRate(50);
+	frameRate(30);
 }
 
 void draw()
@@ -79,6 +79,6 @@ class HugeParticle extends NormalParticle
 	{
 		fill(0);
 		noStroke();
-		rect((float)normalX,(float)normalY,6,6);
+		rect(mouseX,mouseY,6,6);
 	}
 }
