@@ -69,6 +69,6 @@ class HugeParticle extends NormalParticle {
 		noStroke();
 		rect(mouseX,mouseY,6,6);
 		fill(255,255);
-		rect(mouseX,mouseY,5,5);
+		rect(mouseX+1,mouseY+1,5,5);
 	}
 }
