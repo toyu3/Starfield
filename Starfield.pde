@@ -10,6 +10,7 @@ void setup()
 	particles[0] = new OddballParticle();
 	particles[1] = new HugeParticle();
 	frameRate(30);
+	text("word", 40, 120); 
 }
 
 void draw()
