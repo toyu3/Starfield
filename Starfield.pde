@@ -84,5 +84,7 @@ class HugeParticle extends NormalParticle
 		fill(0);
 		noStroke();
 		rect(mouseX,mouseY,6,6);
+		fill(255,255);
+		rect(mouseX,mouseY,5,5);
 	}
 }
