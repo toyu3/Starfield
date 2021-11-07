@@ -11,6 +11,7 @@ void setup()
 	particles[1] = new HugeParticle();
 	frameRate(30);
 	fill(0);
+	textAlign(CENTER, CENTER);
 	text("Start", 100, 100); 
 }
 
