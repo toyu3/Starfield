@@ -10,6 +10,9 @@ void setup()
 	particles[0] = new OddballParticle();
 	particles[1] = new HugeParticle();
 	frameRate(30);
+	fill(0);
+	textAlign(CENTER, CENTER);
+	text("Start", 100, 100); 
 }
 
 void draw()
@@ -21,9 +24,6 @@ void draw()
 		particles[i].show();
 		particles[i].move();
 	}
-	fill(0);
-	textAlign(CENTER, CENTER);
-	text("Start", 100, 100); 
 }
 
 interface Particle
